@@ -1,0 +1,6 @@
+[package]
+description = A package that creates a log for sequences of packet lengths and times,
+	allowing for new analytics based on these data features.
+credits = Michael Torres <mic.ric.tor@gmail.com>
+tags = ssl, tls, spt, spl
+script_dir = scripts
