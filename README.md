@@ -4,7 +4,7 @@ Sequence of Packet Lengths/Sequence of Packet Times
 =================================
 
 ## Purpose
-This Zeek plugin will add the following fields to all Zeek SSL logs:
+This Zeek plugin will save the following fields to _spl.log_ in the logging directory.
 
 * orig_spl - A vector of configurable length (default 20), containing the lengths of encrypted packets from the session originator
 * resp_spl - A vector of configurable length (default 20), containing the lengths of encrypted packets from the session responder
@@ -19,8 +19,6 @@ Other research has also shown similar value in the inclusion of data on inter-pa
 
 ## Installation
 
-*NOTE: This plugin does not currently work.* For whatever reason, Zeek will not output more than the first element of the vectors to the SSL log.
-
 If cloned from source:
 ```
 $ zkg install .
@@ -34,6 +32,11 @@ Alternatively, you could copy _spl-spt.zeek_ into _/opt/zeek/share/zeek/site/spl
 If using Zeek > 3.0 or a Zeek-product, like Corelight:
 ```
 zkg install spl-spt
+```
+
+For what it's worth, I highly recommend enabling JSON logging by adding the following to _local.zeek_
+```
+@load tuning/json-logs.zeek 
 ```
 
 ## Configuration
