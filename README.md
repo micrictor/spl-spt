@@ -51,6 +51,8 @@ If you want the vectors to be larger (or smaller) in length, edit the following 
 
 
 ## References
-https://blogs.cisco.com/security/detecting-encrypted-malware-traffic-without-decryption
-http://ccr.sigcomm.org/online/files/p7-williams.pdf
+https://blogs.cisco.com/security/detecting-encrypted-malware-traffic-without-decryption 
+
+http://ccr.sigcomm.org/online/files/p7-williams.pdf 
+
 https://dl.acm.org/doi/pdf/10.1145/3097983.3098163
