@@ -43,10 +43,10 @@ For what it's worth, I highly recommend enabling JSON logging by adding the foll
 
 ## Configuration
 
-If you want the vectors to be larger (or smaller) in length, edit the following values inside _local.zeek_
+If you want the vectors to be larger (or smaller) in length, edit the following values inside _local.zeek_ after the package is loaded.
 
-* spl_length - The length of the two packet-length vectors 
-* spt_length - The length of the two packet-time vectors
+* SPL::spl_length - The length of the two packet-length vectors 
+* SPL::spt_length - The length of the two packet-time vectors
 
 
 
