@@ -6,6 +6,7 @@ Sequence of Packet Lengths/Sequence of Packet Times
 ## Purpose
 This Zeek plugin will save the following fields to _spl.log_ in the logging directory.
 
+* uid - The related SSL session's unique identifier.
 * orig_spl - A vector of configurable length (default 20), containing the lengths of encrypted packets from the session originator
 * resp_spl - A vector of configurable length (default 20), containing the lengths of encrypted packets from the session responder
 * orig_spt - A vector of configurable length (default 20), containing the time interval between encrypted packets from the session originator
@@ -14,8 +15,9 @@ This Zeek plugin will save the following fields to _spl.log_ in the logging dire
 ## Rationale
 
 Cisco researchers performed a study with the goal of identifying malicious network traffic when it uses TLS. 
-In this study, they showed that a random-forest model, as implemented by SciKit-Learn, can be made up to 30% more accurate at the classification of network traffic as malicious.
-Other research has also shown similar value in the inclusion of data on inter-packet timings. 
+In this study, they showed that a random-forest model, as implemented by SciKit-Learn, can be made up to 30% more accurate by including data on per-packet sizes and per-packet intervals. Other research has supported this claim.
+
+By creating a log containing this data, I hope to enable the creation of new and interesting analytics to detect malware using TLS to communicate.
 
 ## Installation
 
