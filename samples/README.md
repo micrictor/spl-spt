@@ -1,3 +1,3 @@
 # Sample data
 
-Conveniently included in the git repo is sample PCAPs for normal web-browsing to Google, and a Shade ransomware infection, as well as a Python script and it's associated Jupyter notebook that provides some quick visualizations of the new data features, showing that there is a clear difference between the values for benign and malicious traffic.
+Here I have a couple quick scripts for visualizing and classification of data based upon the pre-computed SPL logs in sub-directories. Note, I didn't include the raw PCAP for _web-browse_ because it included traffic from my personal devices, and I don't want to accidentally disclose something private.
